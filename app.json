@@ -1,0 +1,28 @@
+{"pages": [ "pages/index/index",
+  "pages/welcome/welcome",
+ 
+  "pages/detail/detail"
+],"window" : {
+    "navigationBarBackgroundColor": "#F15A24",
+    "enablePullDownRefresh": "ture",
+    "navigationBarTitleText": "狗眼电影"
+    },
+    "tabBar": {
+    "color": "green",
+    "selectedColor": "green",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "搜影片",
+      "iconPath":"pages/image/search.png",
+      "selectedIconPath":"pages/image/search_select.png"
+    },{
+      "pagePath": "pages/welcome/welcome",
+      "text": "我的",
+      "iconPath":"pages/image/index.png",
+      "selectedIconPath":"pages/image/index_select.png"
+    }
+    ]
+  }
+}
