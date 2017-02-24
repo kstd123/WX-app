@@ -1,0 +1,27 @@
+/* pages/welcome/welcome.wxss */
+@import "../untils/weui.wxss";
+
+page {
+  min-height: 100%;
+  background-color: #c0c0c0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c0c0c0;
+}
+
+.meimg {
+  width: 300rpx;
+  height: 400rpx;
+  margin-top: 200rpx;
+}
+
+.motto {
+  margin-top: 150rpx;
+  margin-bottom: 150rpx;
+  font-family: 'Times New Roman';
+  font-size: 16px;
+}

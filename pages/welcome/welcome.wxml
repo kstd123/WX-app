@@ -1,0 +1,10 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="container">
+<input type="text" placeholder-style="输入名字"bindblur="bindblur" />
+    <image src="{{imgSrc}}" class="meimg"></image>
+    <text style="margin-bottom:20rpx;">当前网络状态:{{net}}</text>
+    <text style="margin-bottom:20rpx;">{{info}}</text>
+    
+    <!--封装简易按钮使之可复用-->
+</view>
+<button bindtap="search">下一项</button>
