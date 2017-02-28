@@ -1,0 +1,50 @@
+/* pages/index/index.wxss */
+@import "../untils/weui.wxss";
+
+page {
+    min-height: 100%;
+    background-color:white;
+}
+.t1{
+    font-family: fantasy;
+}
+.box{
+    display: flex;
+    margin-top: 10px;
+    border-bottom: 1px solid #D7D6DC;
+    padding-bottom: 10px;
+}
+.background{
+    width: 150rpx;
+    height: 200rpx;
+    flex: 0 0 20%;
+    margin-left: 30rpx;
+}
+.textground{
+    padding-left: 30rpx;
+    overflow: hidden
+}
+.text{
+    display: block;
+    font-size: 30rpx; 
+    width: 0 0 50%;
+}
+.text1{
+    display: block;
+    font-size: 35rpx; 
+    width:415rpx;
+}
+.btn{
+    position:absolute;
+    padding:30rpx 10rpx;
+    background-color:#F15A24;
+    right:25rpx;
+    line-height:0;
+    font-size:38rpx;
+    border-radius:8rpx;
+    color:aliceblue;
+}
+
+.search_box{
+display: flex;
+}

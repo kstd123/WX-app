@@ -1,0 +1,59 @@
+
+<!--pages/index/index.wxml-->
+
+<!--<image src="{{photo}}" class="background"></image>-->
+<view class="page__bd">
+  <view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+      <view class="weui-search-bar__box">
+        <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+        <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{actor}}" focus="{{inputShowed}}" bindinput="inputTyping" bindblur="bindblur" />
+        <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+          <icon type="clear" size="14"></icon>
+        </view>
+      </view>
+      <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+        <icon class="weui-icon-search" type="search" size="14"></icon>
+        <view class="weui-search-bar__text">搜索影人</view>
+      </label>
+    </view>
+    <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+    <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="search">确定</view>
+  </view>
+
+  <!--<view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>实时搜索文本</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>实时搜索文本</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>实时搜索文本</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>实时搜索文本</view>
+                </view>
+            </navigator>
+        </view>-->
+</view>
+<view class="weui-loadmore" wx:if="{{isShow}}">
+  <view class="weui-loading"></view>
+  <view class="weui-loadmore__tips">正在加载</view>
+</view>
+<view bindtap="detail1" class="box" wx:for="{{imgArr}}" wx:key="imgSrc">
+  <image class="background" src="{{item.imgSrc}}" data-id="{{item.id}}"></image>
+  <view class="textground" data-id="{{item.id}}">
+    <text class="text1" data-id="{{item.id}}">{{item.title}}</text>
+    <text class="text" style="margin-top:30rpx" data-id="{{item.id}}">评分:{{item.score}}分</text>
+    <text class="text" data-id="{{item.id}}">主演:{{item.info}}</text>
+  </view>
+  <button class="btn" bindtap="detail1" data-id="{{item.id}}">详情</button>
+</view>
