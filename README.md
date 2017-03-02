@@ -1,2 +1,2 @@
 # WX-app
-电影资讯小程序
+![](https://github.com/kstd123/WX-app/blob/master/wx-app-show.gif)
