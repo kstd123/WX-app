@@ -1,0 +1,27 @@
+
+<!--pages/detail/detail.wxml-->
+<view>
+  <image style=" filter: blur(10px);height:350rpx;width:100%;" mode="aspectFill" src="{{image}}"></image>
+  <view class="box">
+    <image class="background" src="{{image}}"></image>
+    <view class="textbox">
+      <text class="t1">{{title}}</text>
+      <text class="t1">{{type1}}</text>
+      <text class="t1">{{time}}</text>
+    </view>
+  </view>
+  <view class="detailbox {{detail_box}}" bindtap="detail">
+    <text class="{{detail1}} detail">{{detail}}</text>
+    <view class="{{triangle}}">
+      <view class="san2"></view>
+    </view>
+  </view>
+  <scroll-view class="scroll-view_H" scroll-x="true" display="background-url:'{{image}}';" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-left="{{scrollLeft}}">
+    <view class="actorbox" wx:for="{{actor_img}}" wx:key="imgsrc" data-id="{{item.imgsrc}}" bindtap="actorbind">
+      <image class="actor_img" src="{{item.imgsrc}}" data-id="{{item.imgsrc}}"></image>
+      <view data-id="{{item.imgsrc}}" style="display:flex;justify-content:center">
+        <text display="font-size:33rpx;"data-id="{{item.imgsrc}}">{{item.name}}</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>

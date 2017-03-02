@@ -1,0 +1,124 @@
+/* pages/detail/detail.wxss */
+
+.box {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx;
+  padding-bottom: 40rpx;
+  top: 0rpx;
+}
+
+.blur {
+  width: 100%;
+  height: 280rpx;
+}
+
+text {
+  display: block;
+}
+
+.detail {
+  padding: 30rpx;
+  height: auto;
+  line-height: 45rpx;
+  font-size: 30rpx;
+}
+
+.detail1 {
+  overflow: hidden;
+  height: 149rpx;
+}
+
+.background {
+  width: 210rpx;
+  height: 280rpx;
+  flex: 0 0 30%;
+}
+
+.detailbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+.detailbox2{
+  padding-bottom: 26rpx
+}
+
+
+.t1 {
+  color: ghostwhite;
+  margin-top: 11px;
+}
+
+.triangle1 {
+  width: 0;
+  height: 0;
+  border-width: 26rpx;
+  border-style: solid;
+  border-color: #f15a24 transparent transparent transparent;
+  margin-top: 26rpx;
+  z-index: 1;
+}
+
+/*.san2 {
+  width: 0;
+  height: 0;
+  border-width: 12px;
+  border-style: solid;
+  border-color: blue transparent transparent transparent;
+  z-index: 2;
+  position: relative;
+  bottom: 38rpx;
+  right: 28rpx;
+}*/
+
+.triangle2 {
+  width: 0;
+  height: 0;
+  border-width: 26rpx;
+  border-style: solid;
+  border-color: transparent transparent #f15a24 transparent;
+  /*margin-top: -70rpx;*/
+}
+
+.actorbox {
+  display: inline-block;
+  width: 30%;
+  height: 300rpx;
+  margin-bottom: 164rpx;
+  padding: 30rpx;
+}
+
+.scroll-view_H {
+  border-radius: 20rpx;
+  white-space: nowrap;
+  /*不换行*/
+  margin-top: 20rpx;
+  width: 94%;
+  background-color: #f7f7f7;
+  height: 428rpx;
+  margin-left: 23rpx;
+  margin-right: 20rpx;
+}
+
+.scroll-view-item {
+  height: 200px;
+}
+
+.scroll-view-item_H {
+  display: inline-block;
+  width: 65%;
+  height: 200px;
+}
+
+.actor_img {
+  width: 100%;
+  height: 100%;
+  margin-top: 10rpx;
+  border-radius: 20rpx;
+}
